@@ -36,16 +36,7 @@ export class ProductDetailsGetComponent implements OnInit {
     
     
     }
-    toEditProduct(productToEdit:product){
-      this.ProductApiService.editProduct(productToEdit)
-      .subscribe(
-        apiResponse=>{
-          console.log("product edited successfully");
-          this.router.navigate(['']);
-          alert("product edited succesfully");
-        }
-      )
-    }
+    
 
 }
 

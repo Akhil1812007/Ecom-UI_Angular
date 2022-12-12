@@ -35,12 +35,14 @@ export class ProductGetDetailsByIdComponent implements OnInit {
 
     
   }
+  toEditProduct(id:Number){
+    this.router.navigate(['product/edit/'+id]);
+    
+  }
   backToProducts(){
     this.router.navigate(['']);
   }
-  editProduct(){
-    this.router.navigate(['product','edit',this.product]);
-  }
+  
 
   
 }

@@ -22,8 +22,8 @@
             <label for="categoryId" class="form-label">category id</label>
             <input type="number" class="form-control" id="categoryId" name="categoryId" placeholder="category id" [(ngModel)]="product.categoryId">
         </div>
-        <button (click)="backToProducts()">sell all products</button>
-        <button (click)="editProduct()">edit product</button>
+        <button type="button" class="btn btn-primary ms-10" (click)="backToProducts()">sell all products</button>
+        <button type="button" class="btn btn-primary ms-10" (click)="toEditProduct(product.productId)">edit</button>
 
       </form>
 

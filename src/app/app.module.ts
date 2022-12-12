@@ -9,6 +9,7 @@ import { ProductGetDetailsByIdComponent } from './product.component/product-get-
 import { AddNewProductComponent } from './product.component/add-new-product/add-new-product.component';
 import { FormsModule } from '@angular/forms';
 import { EditProductComponent } from './product.component/edit-product/edit-product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { EditProductComponent } from './product.component/edit-product/edit-prod
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
+    
 
   ],
   providers: [],

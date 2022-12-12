@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div>
+    <a routerLink="product/add"> add new product</a>
+  </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Stock Available</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                
+                <td>{{product.productName}}</td>
+                <td>{{product.unitPrice}}</td>
+                <td>{{product.productQnt}}</td>
+                <td>
+                    <a [routerLink]="['getProductById',product.productId]"> more details</a>
+                    <button type="button" class="btn btn-danger"  (click)="toDeleteProduct(product.productId) "> delete</button>
+                    <button type="button" class="btn btn-primary" (click)="toEditProduct(product)">edit</button>
+
+                </td>                
+            </tr>
+            
+        </tbody>
+        
+      </table>
+
+</div>

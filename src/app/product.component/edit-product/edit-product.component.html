@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>edit product </h1>
+    <form #form="ngForm" >
+        <div class="form-group">
+          <label for="name" class="form-label">product name</label>
+          <input type="text" class="form-control" id="productName"  placeholder="product name"
+          name="productName "[(ngModel)]="productToBeEdited.productName">
+        </div>
+        <div class="form-group">
+            <label for="price" class="form-label">product price</label>
+            <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="product price" [(ngModel)]="productToBeEdited.unitPrice">
+        </div>
+        <div class="form-group">
+            <label for="productQnt" class="form-label">product quantity</label>
+            <input type="number" class="form-control" id="productQnt" name="productQnt"  placeholder="product quantity" [(ngModel)]="productToBeEdited.productQnt">
+        </div>
+        <!-- <div class="form-group">
+            <label for="name" class="form-label">product image</label>
+            <input type="image" class="form-control" id="productImage"  placeholder="product image">
+        </div> -->
+        <div class="form-group">
+            <label for="categoryId" class="form-label">category id</label>
+            <input type="number" class="form-control" id="categoryId" name="categoryId" placeholder="category id" [(ngModel)]="productToBeEdited.categoryId">
+        </div>
+        <button >save</button>
+      </form>
+
+</div>
